@@ -330,7 +330,7 @@ body {
 
 #aang { display: none; }
 
-#intro.scene-aang { --glow: 207, 216, 255; }
+#intro.scene-aang { --glow: 255, 255, 255; }
 
 #intro.scene-aang #zuko,
 #intro.scene-aang #fireball,
@@ -405,6 +405,17 @@ html.portfolio-open body {
     overflow-y: auto;
     overflow-x: clip;
     background: var(--void);
+}
+
+#notice {
+    position: absolute;
+    left: 50%;
+    bottom: 4vh;
+    transform: translateX(-50%);
+    max-width: 80vw;
+    max-height: 24vh;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 #intro { z-index: 1000; }
@@ -658,3 +669,24 @@ html.js .lang.in .strata b { transform: none; transition: transform .9s steps(12
 #intro-text.on { display: block; }
 #intro-text .t-off { visibility: hidden; }
 #intro-text .caret { display: inline-block; width: .5em; height: 1em; margin-right: -.5em; vertical-align: -0.12em; background: #fff; animation: blink 1s steps(1, end) infinite; }
+
+.replay {
+    position: fixed;
+    top: 84px;
+    right: var(--gut);
+    z-index: 81;
+    appearance: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    background: var(--hot);
+    color: var(--void);
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0 #000;
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    transition: transform .08s steps(2), box-shadow .08s steps(2);
+}
+.replay:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 #000; }
+.replay:active { transform: translate(4px, 4px); box-shadow: 0 0 0 #000; }
+@media (max-width: 860px) { .replay { top: 112px; font-size: 11px; padding: 8px 10px; } }

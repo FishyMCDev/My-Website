@@ -51,7 +51,7 @@ const ROCK_GONE = "130vw";
 const EARTH_BG = "assets/images/Earthbending.png";
 const AANG_START = 85;  
 const AANG_CENTER = 50;  
-const AIR_BG = "assets/images/airbending.png";
+const AIR_BG = "assets/images/Airbending.png";
 let stopped = false;
 
 // Volumes
@@ -1184,3 +1184,16 @@ skip.addEventListener("click", endIntro);
             pixelIn();
         }
     })();
+    const replayBtn = document.getElementById("replay");
+if (replayBtn) replayBtn.addEventListener("click", () => {
+    try { sessionStorage.setItem("replayIntro", "1"); } catch (e) {}
+    location.assign(location.pathname + location.search);
+});
+
+
+try {
+    if (sessionStorage.getItem("replayIntro")) {
+        sessionStorage.removeItem("replayIntro");
+        closeSoundGate();
+    }
+} catch (e) {}
