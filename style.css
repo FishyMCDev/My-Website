@@ -408,12 +408,9 @@ html.portfolio-open body {
 }
 
 #notice {
-    position: absolute;
-    left: 50%;
-    bottom: 4vh;
-    transform: translateX(-50%);
+    position: relative;
     max-width: 80vw;
-    max-height: 24vh;
+    max-height: 18vh;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
 }
