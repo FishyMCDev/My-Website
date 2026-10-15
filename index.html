@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishy's Portfolio</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./portfolio.css">
+</head>
+<body>
+
+<main id="intro" class="pre-start">
+    <img id="background" src="assets/zuko/10-1.png" alt="">
+    <div id="zuko-line"></div>
+    <img id="zuko" src="assets/zuko/01.png" alt="">
+    <img id="fireball" src="assets/zuko/05.png" alt="">
+    <img id="katara" src="assets/katara/01.png" alt="">
+    <img id="ice" src="assets/katara/06.png" alt="">
+    <img id="toph" src="assets/toph/01.png" alt="">
+    <img id="rock" src="assets/toph/04.png" alt="">
+    <img id="aang" src="assets/aang/01.png" alt="">
+    <img id="air-shot" src="assets/aang/04.png" alt="">
+
+    <div id="element-name">FIRE</div>
+    <p id="intro-text" aria-live="polite"></p>
+
+    <button id="start" class="btn-eight-bit">PRESS START</button>
+    <button id="skip">SKIP</button>
+
+    <div id="sound-gate">
+        <img id="arrow" src="assets/arrow.png" alt="">
+        <p id="sound-message">please allow sound for this website, it makes the experience better</p>
+        <p id="notice">It's recommended to use a <b>PC BROWSER</b> for the best experience with the intro</p>
+        <p id="sound-continue">click anywhere to continue</p>
+    </div>
+
+    <audio id="fire-sound" src="assets/audio/fire-sound.mp3" preload="auto"></audio>
+    <audio id="fire-wave-sound" src="assets/audio/fire-wave.mp3" preload="auto"></audio>
+    <audio id="footstep-sound" src="assets/audio/footsteps.mp3" preload="auto" loop></audio>
+    <audio id="type-sound" src="assets/audio/typewriter.mp3" preload="auto"></audio>
+    <audio id="click-sound" src="assets/audio/mouse-click.mp3" preload="auto"></audio>
+    <audio id="stomp-sound" src="assets/audio/stomp.mp3" preload="auto"></audio>
+    <audio id="eightbit-sound" src="assets/audio/8bit.mp3" preload="auto"></audio>
+
+    <audio id="jump-sound" src="assets/audio/jump.mp3" preload="auto"></audio>
+    <audio id="land-sound" src="assets/audio/land.mp3" preload="auto"></audio>
+    <audio id="ice-sound" src="assets/audio/ice.mp3" preload="auto"></audio>
+    <audio id="splash-sound" src="assets/audio/water-splash.mp3" preload="auto"></audio>
+    <audio id="splash2-sound" src="assets/audio/water-splash-2.mp3" preload="auto"></audio>
+
+    <audio id="earth-pull-sound" src="assets/audio/earth-pull.mp3" preload="auto"></audio>
+    <audio id="earth-hit-sound" src="assets/audio/earth-hit.mp3" preload="auto"></audio>
+    <audio id="earth-smash-sound" src="assets/audio/earth-smash.mp3" preload="auto"></audio>
+
+    <audio id="air-kick-sound" src="assets/audio/air-kick.mp3" preload="auto"></audio>
+    <audio id="air-projectile-sound" src="assets/audio/air-projectile.mp3" preload="auto"></audio>
+    <audio id="air-push-sound" src="assets/audio/air-push.mp3" preload="auto"></audio>
+</main>
+
+<!- Portfolio section -!> 
+<div id="portfolio">
+
+  <header class="nav">
+    <a class="logo" href="#air" data-go="top">FishyMC</a>
+    <nav class="tabs" aria-label="Portfolio sections">
+      <a href="#air" data-go="air" style="--c: var(--air)"><span>Air</span></a>
+      <a href="#fire" data-go="fire" style="--c: var(--fire)"><span>Fire</span></a>
+      <a href="#earth" data-go="earth" style="--c: var(--earth)"><span>Earth</span></a>
+      <a href="#water" data-go="water" style="--c: var(--water)"><span>Water</span></a>
+      <a href="#contact" data-go="contact" style="--c: var(--hot)"><span>Contact</span></a>
+    </nav>
+  </header>
+
+  <div class="page">
+    <div class="slab air" id="air">
+      <section class="biome" aria-labelledby="air-h">
+        <img class="bgart r spin" src="assets/images/Airbending.png" alt="">
+        <div class="wrap">
+          <header class="head rv">
+            <div class="head-in" style="--n: 3">
+              <div class="kicker"><span class="emblem" data-emblem="air" data-img="assets/images/airbending.png" aria-hidden="true"></span><span>Element of Freedom</span></div>
+              <h2 class="title" id="air-h" data-t="Air">Air</h2>
+              <p class="plate"><span>Who I am</span></p>
+            </div>
+          </header>
+          <div class="air-grid">
+            <div class="bio rv" style="--d: 1">
+              <p class="lead">I'm FishyMC, and I love breaking things, and <s>occasionally</s> fixing them :)</p>
+              <p>I had a plan for this introduction. That plan had sub plans. And now you're reading this introduction. Take a guess what happened to the plan.</p>
+            </div>
+            <figure class="photo rv" style="--d: 3">
+              <div class="frame"><img src="assets/images/me.png" alt="FishyMC"></div>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <div class="tape" style="--tc: var(--fire)" data-t="FIYAHHHHHHHHHHHHHHH" aria-hidden="true"></div>
+    </div>
+    <div class="slab fire" id="fire">
+      <section class="biome" aria-labelledby="fire-h">
+        <img class="bgart r" src="assets/zuko/10-1.png" alt="">
+        <canvas class="fx" data-fx="fire" aria-hidden="true"></canvas>
+        <div class="wrap">
+          <header class="head rv">
+            <div class="head-in" style="--n: 4">
+              <div class="kicker"><span class="emblem" data-emblem="fire" data-img="assets/zuko/10-1.png" aria-hidden="true"></span><span>Element of Power</span></div>
+              <h2 class="title" id="fire-h" data-t="Fire">Fire</h2>
+              <p class="plate"><span>Top projects</span></p>
+            </div>
+          </header>
+          <ol class="rows">
+            <li class="rv" style="--d: 0">
+              <button class="row has-img" type="button" data-open="project-1">
+                <span class="rk">1</span><span class="tt">AvatarLegacy</span><img class="rimg" src="assets/images/AL.png" alt=""><span class="go"></span>
+              </button>
+            </li>
+            <li class="rv" style="--d: 1">
+              <button class="row" type="button" data-open="project-2">
+                <span class="rk">2</span><span class="tt">JugendForscht</span><span class="go"></span>
+              </button>
+            </li>
+            <li class="rv" style="--d: 2">
+              <button class="row" type="button" data-open="project-3">
+                <span class="rk">3</span><span class="tt">PiratesMC</span><span class="go"></span>
+              </button>
+            </li>
+          </ol>
+        </div>
+        <div class="pv" id="project-1" hidden>
+          <div class="wrap pv-in">
+            <button class="back" type="button" data-back><span>&lt; Back</span></button>
+            <p class="pk">Project 1</p>
+            <h3 class="ptitle">AvatarLegacy</h3>
+            <div class="pbody">
+              <div class="pshot"><img src="assets/images/AL.png" alt="AvatarLegacy"></div>
+              <div class="ptext">
+                <p>The Four Elements Minecraft RPG. The idea was created in June 2024 in my room. Since then, I've been designing, developing, and refining an RPG experience built bending the four elements, progression, and exploration.</p>
+                <p>Join the Discord server to follow along:</p>
+                <a class="plink" href="https://discord.gg/a53GbBw2kP" target="_blank" rel="noopener">Join the Discord</a>
+                <a class="plink" href="https://avatarlegacy.net" target="_blank" rel="noopener">AvatarLegacy Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pv" id="project-2" hidden>
+          <div class="wrap pv-in">
+            <button class="back" type="button" data-back><span>&lt; Back</span></button>
+            <p class="pk">Project 2</p>
+            <h3 class="ptitle">JugendForscht</h3>
+            <div class="pbody">
+              <div class="pshot"><img src="assets/images/jf.png" alt="JugendForscht"></div>
+              <div class="ptext">
+                <p class="psub">Recycling PCB boards using AI visual recognition</p>
+                <p>Electronic waste is full of valuable materials, yet recovering them efficiently remains a challenge. ReCircuit is my Jugend forscht project exploring how computer vision and machine learning can identify printed circuit boards (PCBs) in mixed waste streams, helping make automated recycling more efficient.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pv" id="project-3" hidden>
+          <div class="wrap pv-in">
+            <button class="back" type="button" data-back><span>&lt; Back</span></button>
+            <p class="pk">Project 3</p>
+            <h3 class="ptitle small">PiratesMC</h3>
+            <div class="pbody">
+              <div class="pshot"><img src="assets/images/piratesmc.png" alt="PiratesMC"></div>
+              <div class="ptext">
+                <p class="psub">A Pirate-themed Minecraft server!</p>
+                <p>I currently manage PiratesMC development, and I have been working on it since May 2026. There, I created custom PvP and forging systems for the server, never seen anywhere else.</p>
+                <p>Working alongside a development team, I also contribute to the server's wider operations, with the project generating over $2,500 in funding for the in-game shop.</p>
+                <a class="plink" href="https://store.piratesmc.co" target="_blank" rel="noopener">PiratesMC Store</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="tape rev" style="--tc: var(--earth)" data-t="EARFFFFFFFFFFFFFF" aria-hidden="true"></div>
+      <a class="strip" id="past-work" href="spirit-world.html"><span>Enter the spirit world?</span><i aria-hidden="true">&gt;</i></a>
+    </div>
+
+    <div class="slab earth" id="earth">
+      <section class="biome" aria-labelledby="earth-h">
+        <img class="bgart r" src="assets/images/Earthbending.png" alt="">
+        <canvas class="fx" data-fx="earth" aria-hidden="true"></canvas>
+        <div class="wrap">
+          <header class="head rv">
+            <div class="head-in" style="--n: 5">
+              <div class="kicker"><span class="emblem" data-emblem="earth" data-img="assets/images/earthbending.png" aria-hidden="true"></span><span>Element of Stability</span></div>
+              <h2 class="title" id="earth-h" data-t="Earth">Earth</h2>
+              <p class="plate"><span>Languages &amp; tools</span></p>
+            </div>
+          </header>
+          <div class="earth-grid">
+            <div class="lang rv" style="--d: 0">
+              <h3 class="sub">Languages</h3>
+              <ul class="strata">
+                <li data-lv="5" style="--i: 0"><b>Python</b><i></i></li>
+                <li data-lv="5" style="--i: 1"><b>Java</b></li>
+                <li data-lv="4" style="--i: 2"><b>NumPy</b><i></i></li>
+                <li data-lv="4" style="--i: 3"><b>HTML / CSS</b><i></i></li>
+                <li data-lv="3" style="--i: 4"><b>JavaScript</b><i></i></li>
+                <li data-lv="3" style="--i: 5"><b>TypeScript</b><i></i></li>
+                <li data-lv="2" style="--i: 6"><b>SQL</b></li>
+              </ul>
+            </div>
+            <div class="tools rv" style="--d: 2">
+              <h3 class="sub">Tools</h3>
+              <ul class="rocks">
+                <li style="--sz: 3">IntelliJ IDEA</li><li style="--sz: 3">VS Code</li><li style="--sz: 2">Git</li>
+                <li style="--sz: 2">Node / React</li><li style="--sz: 2">ArduinoIDE</li><li style="--sz: 1">Maven</li>
+                <li style="--sz: 1">KiCad</li><li style="--sz: 1">Command line</li><li style="--sz: 1">Gradle</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="tape" style="--tc: var(--water)" data-t="WATAHHHHHHHHHHHHHHHHHH" aria-hidden="true"></div>
+    </div>
+    <div class="slab water" id="water">
+      <section class="biome" aria-labelledby="water-h">
+        <img class="bgart r" src="assets/katara/bg-1.png" alt="">
+        <canvas class="fx" data-fx="water" aria-hidden="true"></canvas>
+        <div class="wrap">
+          <header class="head rv">
+            <div class="head-in" style="--n: 5">
+              <div class="kicker"><span class="emblem" data-emblem="water" data-img="assets/katara/bg-1.png" aria-hidden="true"></span><span>Element of Flow</span></div>
+              <h2 class="title" id="water-h" data-t="Water">Water</h2>
+              <p class="plate"><span>The future</span></p>
+            </div>
+          </header>
+          <div class="flow">
+            <article class="wp rv" style="--i: 0; --d: 0"><p class="label">Now</p><h3>Learning</h3><p>C / C++</p><p>Cyber Security</p><div class="wave" aria-hidden="true"></div></article>
+            <article class="wp rv" style="--i: 1; --d: 1"><p class="label">Next</p><h3>Building</h3><p>AvatarLegacy, the four elements Minecraft RPG</p><div class="wave" aria-hidden="true"></div></article>
+            <article class="wp rv" style="--i: 2; --d: 2"><p class="label">Later</p><h3>Reaching</h3><p>AI and Machine learning / Hackclub</p><div class="wave" aria-hidden="true"></div></article>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="slab end" id="contact">
+      <section class="contact" aria-labelledby="contact-h">
+        <canvas class="fx" data-fx="stars" aria-hidden="true"></canvas>
+        <div class="wrap">
+          <header class="head rv">
+            <div class="head-in" style="--n: 7">
+              <div class="kicker"><span class="emblem" data-emblem="mail" aria-hidden="true"></span><span>Let's talk</span></div>
+              <h2 class="title quad" id="contact-h" data-t="Contact">Contact</h2>
+              <p class="plate"><span>Say hi</span></p>
+            </div>
+          </header>
+          <div class="contact-grid">
+            <div class="rv" style="--d: 2">
+              <div class="mail">
+                <code id="mail">fishy.minecraft11@gmail.com</code>
+                <button class="btn" id="copy" type="button"><span>Copy</span></button>
+              </div>
+              <div class="socials">
+                <a class="btn ghost" href="https://github.com/user/1164875862613704756" target="_blank" rel="noopener noreferrer" style="--h: var(--air)"><span>GitHub</span></a>
+                <a class="btn ghost" href="https://discord.gg/9E6NJ7wdGF" target="_blank" rel="noopener noreferrer" style="--h: #7b8cff"><span>Discord</span></a>
+                <a class="btn ghost" href="mailto:fishy.minecraft11@gmail.com" style="--h: var(--hot)"><span>Email</span></a>
+              </div>
+            </div>
+          </div>
+          <footer class="foot">
+            <span class="label">&copy; 2026 FishyMC</span>
+          </footer>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="portfolio.js"></script>
+</body>
+</html>
