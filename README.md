@@ -29,7 +29,7 @@ It's also something that I enjoy doing, and it reflects my interests.
 
 You probably wont need it, but you can contact me via email [`fishy.minecraft11@gmail.com`] or discord [`@fishymc`] 
 
-#License 
+# License 
 
 There isn't one for now :)
 
