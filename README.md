@@ -2,7 +2,7 @@
 
 # Description 
 
-This repo has all the source code for my website, which serves as a portfolio for me. It has an introduction, and then an actual portfolio.
+This repo has all the source code for my website, which serves as a portfolio for me. It has an introduction, and then an actual portfolio. The website shows my interests and projects, as well as my past and future. Soon it will feature even more art muahhahaha.
 
 **Screenshots**
 
@@ -20,7 +20,16 @@ This repo has all the source code for my website, which serves as a portfolio fo
 - Type https://fishymc.me into your browser 
 - Enjoy 
 
+# Why did I build this? 
+
+I built it so that other people can see what I built, and because I love building stuff. It's a good way to make an introduction and also get potential client :)) 
+It's also something that I enjoy doing, and it reflects my interests.
+
 # Help 
 
-You probably wont need it, but you can contact me via email [`fishy.minecraft11@gmail.com`] or discord [`@fishymc`]
+You probably wont need it, but you can contact me via email [`fishy.minecraft11@gmail.com`] or discord [`@fishymc`] 
+
+#License 
+
+There isn't one for now :)
 
