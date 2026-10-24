@@ -48,10 +48,10 @@ const TOPH_RIGHT = 58;
 const ROCK_FAR = "95vw";                   
 const ROCK_NEAR = `calc(50vw + ${170 * K}px)`;   
 const ROCK_GONE = "130vw";                  
-const EARTH_BG = "assets/images/Earthbending.png";
+const EARTH_BG = ["assets/images/Earthbending.png", "assets/images/Earthbending2.png"];
+const AIR_BG = ["assets/images/Airbending.png", "assets/images/Airbending2.png"];
 const AANG_START = 85;  
-const AANG_CENTER = 50;  
-const AIR_BG = "assets/images/Airbending.png";
+const AANG_CENTER = 50;     
 let stopped = false;
 
 // Volumes
@@ -104,10 +104,11 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
     const image = new Image();
     image.src = `assets/aang/${frame}.png`;
 });
-{
+
+[...EARTH_BG, ...AIR_BG].forEach(src => {
     const image = new Image();
-    image.src = AIR_BG;
-}
+    image.src = src;
+});
 // background
 
 const ZUKO_BG = ["assets/zuko/10-1.png", "assets/zuko/10-2.png"];
@@ -541,8 +542,7 @@ async function kataraAnimation() {
 function switchToToph() {
     intro.classList.remove("scene-katara");
     intro.classList.add("scene-toph");
-    clearInterval(flameTimer);
-    background.src = EARTH_BG;
+    setBackground(EARTH_BG);
 
     hideRock();
 
@@ -609,8 +609,7 @@ async function tophAnimation() {
 function switchToAang() {
     intro.classList.remove("scene-toph");
     intro.classList.add("scene-aang");
-    clearInterval(flameTimer);
-    background.src = AIR_BG;
+    setBackground(AIR_BG);
 
     hideRock();
     hideAirShot();
